@@ -1,5 +1,16 @@
+.App {
+	background-color: #1d2c39;
+	color: #ffffff;
+	padding: 100px;
+}
+
 .app-title {
 	text-align: center;
+	margin-top: 0;
+}
+
+h4 {
+	margin: 0;
 }
 
 .movies {
@@ -7,6 +18,7 @@
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .movie-card {
@@ -18,7 +30,39 @@
 	width: 100%;
 }
 
+.no-image {
+	height: 225px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000000;
+}
+
 .movie-card__info {
 	display: flex;
 	justify-content: space-between;
+}
+
+.search {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.search-input {
+	color: white;
+	background: transparent;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.search-button {
+	background-color: #ff610e;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 50%;
+	margin-left: 10px;
 }
