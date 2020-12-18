@@ -1,7 +1,27 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
 	background-color: #1d2c39;
 	color: #ffffff;
-	padding: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.App {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header {
+	margin: 50px;
 }
 
 .app-title {
@@ -22,8 +42,25 @@ h4 {
 }
 
 .movie-card {
+	position: relative;
 	margin: 5px;
 	max-width: 150px;
+}
+
+.movie-card__voting {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: #ff610e;
+	color: #1d2c39;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	font-weight: bold;
+	font-size: 11px;
 }
 
 .movie-card img {
@@ -65,4 +102,12 @@ h4 {
 	padding: 10px;
 	border-radius: 50%;
 	margin-left: 10px;
+}
+
+.movie-detail {
+	display: flex;
+}
+
+.movie-detail__infos {
+	margin-left: 20px;
 }
