@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import MovieDetail from './pages/MovieDetail';
 import Header from './components/Header';
@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div className="App">
-            <Router>
+            <HashRouter basename="/">
                 <Header />
                 <Switch>
                     <Route exact path="/">
@@ -18,7 +18,7 @@ function App() {
                         <MovieDetail />
                     </Route>
                 </Switch>
-            </Router>
+            </HashRouter>
         </div>
     );
 }
